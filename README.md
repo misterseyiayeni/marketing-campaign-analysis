@@ -213,7 +213,7 @@ We evaluated multiple clustering techniques based on the silhouette score, which
    - (n_components = 5): Silhouette score = 0.1341
 
 **Performance Summary**:
-- **DBSCAN** with (text{eps} = 2) and (text{min_samples} = 20 ) had the highest silhouette score (0.3385).
+- **DBSCAN** with (eps} = 2) and (text{min_samples} = 20 ) had the highest silhouette score (0.3385).
 - **K-Means** with (n_clusters = 3) provided a strong performance with a silhouette score of 0.2694.
 
 **Scope for Improvement**:
