@@ -203,11 +203,11 @@ We evaluated multiple clustering techniques based on the silhouette score, which
    - Silhouette score for (k = 5): 0.1192
 
 3. **DBSCAN**:
-   - (text{eps} = 2), (text{min_samples} = 6): Silhouette score = 0.1112
-   - (text{eps} = 2), (text{min_samples} = 20): Silhouette score = 0.3385
-   - (text{eps} = 3), (text{min_samples} = 6): Silhouette score = 0.2237
-   - (text{eps} = 3), (text{min_samples} = 20): Silhouette score = 0.3382
-   - **Best score**: DBSCAN with (text{eps} = 2) and (text{min_samples} = 20), silhouette score = 0.3385
+   - (eps = 2), (min_samples = 6): Silhouette score = 0.1112
+   - (eps = 2), (min_samples = 20): Silhouette score = 0.3385
+   - (eps = 3), (min_samples = 6): Silhouette score = 0.2237
+   - (eps = 3), (min_samples = 20): Silhouette score = 0.3382
+   - **Best score**: DBSCAN with (eps = 2) and (min_samples = 20), silhouette score = 0.3385
 
 4. **Gaussian Mixture Model (GMM)**:
    - (n_components = 5): Silhouette score = 0.1341
