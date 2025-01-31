@@ -193,28 +193,28 @@ The dataset contains the following features:
 We evaluated multiple clustering techniques based on the silhouette score, which measures how similar an object is to its own cluster compared to other clusters. Here’s a comparison:
 
 1. **K-Means**:
-   - For \( n\_clusters = 3 \): Silhouette score = 0.2694
-   - For \( n\_clusters = 4 \): Silhouette score = 0.2547
-   - For \( n\_clusters = 5 \): Silhouette score = 0.2337
-   - For \( n\_clusters = 6 \): Silhouette score = 0.2186
-   - **Best score**: K-Means with \( n\_clusters = 3 \), silhouette score = 0.2694
+   - For (n_clusters = 3): Silhouette score = 0.2694
+   - For (n_clusters = 4): Silhouette score = 0.2547
+   - For (n_clusters = 5): Silhouette score = 0.2337
+   - For (n_clusters = 6): Silhouette score = 0.2186
+   - **Best score**: K-Means with (n_clusters = 3), silhouette score = 0.2694
 
 2. **K-Medoids**:
-   - Silhouette score for \( k = 5 \): 0.1192
+   - Silhouette score for (k = 5): 0.1192
 
 3. **DBSCAN**:
-   - \( \text{eps} = 2 \), \( \text{min\_samples} = 6 \): Silhouette score = 0.1112
-   - \( \text{eps} = 2 \), \( \text{min\_samples} = 20 \): Silhouette score = 0.3385
-   - \( \text{eps} = 3 \), \( \text{min\_samples} = 6 \): Silhouette score = 0.2237
-   - \( \text{eps} = 3 \), \( \text{min\_samples} = 20 \): Silhouette score = 0.3382
-   - **Best score**: DBSCAN with \( \text{eps} = 2 \) and \( \text{min\_samples} = 20 \), silhouette score = 0.3385
+   - (text{eps} = 2), (text{min_samples} = 6): Silhouette score = 0.1112
+   - (text{eps} = 2), (text{min_samples} = 20): Silhouette score = 0.3385
+   - (text{eps} = 3), (text{min_samples} = 6): Silhouette score = 0.2237
+   - (text{eps} = 3), (text{min_samples} = 20): Silhouette score = 0.3382
+   - **Best score**: DBSCAN with (text{eps} = 2) and (text{min_samples} = 20), silhouette score = 0.3385
 
 4. **Gaussian Mixture Model (GMM)**:
-   - \( n\_components = 5 \): Silhouette score = 0.1341
+   - (n_components = 5): Silhouette score = 0.1341
 
 **Performance Summary**:
-- **DBSCAN** with \( \text{eps} = 2 \) and \( \text{min\_samples} = 20 \) had the highest silhouette score (0.3385).
-- **K-Means** with \( n\_clusters = 3 \) provided a strong performance with a silhouette score of 0.2694.
+- **DBSCAN** with (text{eps} = 2) and (text{min_samples} = 20 ) had the highest silhouette score (0.3385).
+- **K-Means** with (n_clusters = 3) provided a strong performance with a silhouette score of 0.2694.
 
 **Scope for Improvement**:
 - Further tuning of DBSCAN parameters (eps and min_samples) could potentially improve performance.
@@ -232,7 +232,7 @@ We evaluated multiple clustering techniques based on the silhouette score, which
 
 #### 3. Proposal for the Final Solution Design
 
-Based on the analysis, I propose adopting **DBSCAN** with \( \text{eps} = 2 \) and \( \text{min\_samples} = 20 \) for the following reasons:
+Based on the analysis, I propose adopting **DBSCAN** with (text{eps} = 2) and (text{min_samples} = 20) for the following reasons:
 
 - **Highest Silhouette Score**: Achieved the best-defined clusters among the methods tested.
 - **Flexibility**: Effectively handles outliers and finds arbitrarily shaped clusters, making it versatile for various data structures.
